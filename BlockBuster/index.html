@@ -1,82 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Blockbuster</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-</head>
+<title>Blockbugster</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
 <body>
-    <!- Los links con # hay que redireccionarlos, por ejemplo la linea 28, en el "href"->
 
-<body background="img/Fondo azul.jpg">
-    
-  <nav class="navbar navbar-expand-lg" style="background-color: #fffb00;">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#"><img src="img/LogoPrincipal.png" width="120" height="70"></a>
-  
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-            
-          <a class="nav-link" href="#"><font color="blue" size="5">Principal</font> <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><font color="blue" size="5">Iniciar sesión</font></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"><font color="blue" size="5">Acerca de</font></a>
-          </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+<!-- Barra de navegador -->
+<div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="index.html" onclick="myFunction()" title="Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"> <img src="/img/LogoPrincipal.png" height="60" width="110"></a>
+    <ul>
+      <a href="Inicio.html" class="w3-padding-large w3-hover-red w3-hide-small w3-right">Iniciar Sesión</a>
+    </ul>
+  </div>
+</div>
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2><font color = "white">Blockbuster</font></h2>
-      <h5></h5>
-      <div> <img src="img/Blockbuster.png" weight="200" height="200"></div>
-      <p><font color="white">Página "oficial" de blockbuster</font></p>
-      <h3><font color="white">Inicio de sesión</font></h3>
-      <p><font color="white">Opciones de inicio de sesión</font></p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Iniciar Sesión</a>
-        </li>
-        <br>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Crear cuenta</a>
-        </li>
-        <br>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Más información</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
+
+<!-- Contenido de la página -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Imágenes automáticas -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/img/Tienda.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Tienda</h3>
+      <p><b>Ven a visitar nuestra tienda física, a no, no tenémos.. :c</b></p>   
     </div>
-    <div class="col-sm-8">
-      <h2><font color="white">Acerca de:</font></h2>
-      <h5><font color="white">Descripción de la página</font></h5>
-      <div>
-          <img src="multimedia/homero.gif" width="700" height="400">
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/img/Mundo.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Descubrir</h3>
+      <p><b>Podrás descubrir nuevos mundos.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/img/CARRO.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Regalía de carro</h3>
+      <p><b>Si te inscribes a nuestra página te regalaremos un carro como este.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">¿Eres nuevo?</h2>
+    <p class="w3-opacity"><i>Información acerca del sitio:</i></p>
+    <p class="w3-justify">Base de la página diseñada para adquirir videos de nuestra biblioteca, solo es una base ya que no le funciona ningun botón, exeptuando los botones de inicio de sesión y el logo de blockbugster las imágenes abajo son ejemplos, pueden agregar las imagenes que quieran</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Tienda</p>
+        <img src="/img/Tienda.jpg" class="w3-round w3-margin-bottom" alt="Tienda" style="width:60%">
       </div>
-      <p><font color = "white">Prueba de texto: </font></p>
-      <p><font color="white">Base de la página creada con el fin de insertarle los diferentes puntos establecidos por el profesor en el proyecto final de este curso. Esta es solo un aprueba, con el paso del tiempo irá cambiando hasta obtener el resultado final esperado por el profesor.</font></p>
-      <br>
-      <div</div>
+      <div class="w3-third">
+        <p>Logo</p>
+        <img src="/img/Blockbuster.png" class="w3-round w3-margin-bottom" alt="Logo" style="width:70%">
+      </div>
+      <div class="w3-third">
+        <p>Cassette</p>
+        <img src="/img/cassette.jpg" class="w3-round w3-margin-bottom" alt="Cassette" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: darkgray;">
+  <!-- Contácto -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">Contáctenos</h2>
+    <p class="w3-opacity w3-center"><i>¡No nos escriba, no nos llame!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Alajuela, CR<br>
+        <i class="fa fa-phone" style="width:30px"></i> Celular: +506 8888888<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: jjchaconarce@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Mensaje">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">Enviar</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
+<!-- Image of location/map -->
+<img src="imagen" class="w3-image w3-greyscale-min" style="width:100%">
+Aquí agregan una imagen que quieran :)
+
+<!-- Borde de la página -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity" href = "www.facebook.com"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
