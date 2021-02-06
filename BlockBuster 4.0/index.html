@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="icon" type="image/png" href="svg/favicon.svg">
+<title>Blockbugster</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<head>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"> </script>
+<style>
+  body {font-family: "Lato", sans-serif}
+</style>
+<body>
+
+  
+<!-- Barra de navegador -->
+<div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="index.html" onclick="myFunction()" title="Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"> <img src="/img/LogoPrincipal.png" height="60" width="110"></a>
+    <ul></ul>
+      <a href="Inicio.html" class="w3-padding-large w3-hover-red w3-hide-small w3-right">Iniciar Sesión</a>
+  </div>
+</div>
+
+
+<!-- Contenido de la página -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Imágenes automáticas -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/img/Tienda.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Tienda</h3>
+      <p><b>Ven a visitar nuestra tienda física, a no, no tenémos.. :c</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/img/Mundo.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Descubrir</h3>
+      <p><b>Podrás descubrir nuevos mundos.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/img/CARRO.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Regalía de carro</h3>
+      <p><b>Si te inscribes a nuestra página te regalaremos un carro como este.</b></p>    
+    </div>
+  </div>
+  
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">¿Eres nuevo?</h2>
+    <p class="w3-opacity"><i>Información acerca del sitio:</i></p>
+    <p class="w3-justify">Base de la página diseñada para adquirir videos de nuestra biblioteca, solo es una base ya que no le funciona ningun botón, exeptuando los botones de inicio de sesión y el logo de blockbugster las imágenes abajo son ejemplos, pueden agregar las imagenes que quieran</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Tienda</p>
+        <img src="/img/Tienda.jpg" class="w3-round w3-margin-bottom" alt="Tienda" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Logo</p>
+        <img src="/img/Blockbuster.png" class="w3-round w3-margin-bottom" alt="Logo" style="width:70%">
+      </div>
+      <div class="w3-third">
+        <p>Cassette</p>
+        <img src="/img/cassette.jpg" class="w3-round w3-margin-bottom" alt="Cassette" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: darkgray;">
+  <!-- Contácto -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">Contáctenos</h2>
+    <p class="w3-opacity w3-center"><i>¡No nos escriba, no nos llame!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Alajuela, CR<br>
+        <i class="fa fa-phone" style="width:30px"></i> Celular: +506 8888888<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: jjchaconarce@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Mensaje">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="imagen" class="w3-image w3-greyscale-min" style="width:100%">
+Aquí agregan una imagen que quieran :)
+
+<!-- Borde de la página -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity" href = "www.facebook.com"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
